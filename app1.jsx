@@ -10,7 +10,7 @@ class UsingApp extends React.Component {
             <h2>{this.props.contentProp}</h2>
             <ul>
                {
-                  this.props.propArray.map((item) => {
+                  this.props.propArray.map(function (item) {
                      return <li>{ item }</li>
                })}
             </ul>
