@@ -10,8 +10,8 @@ class UsingApp extends React.Component {
             <h2>{this.props.contentProp}</h2>
             <ul>
                {
-                  this.props.propArray.map(function (item) {
-                     return <li>{ item }</li>
+                  this.props.propArray.map(function (item,index) {
+                     return <li> { item + ' index'}{index}</li>
                })}
             </ul>
             <h2>{this.props.propBool ? 'you have entered true':'You have entered false'}</h2>
